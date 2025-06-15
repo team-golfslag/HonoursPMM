@@ -36,7 +36,7 @@ function main() {
     void main(void) {
       float angle = 0.7 * time;
       vec2 normalizedCoord = gl_FragCoord.xy / resolution.xy * 2.0 - 1.0;
-      for(float i = 0.0; i < 0.1 * time; i++) {
+      for(float i = 0.0; i < 0.5 * time; i++) {
         normalizedCoord = abs(normalizedCoord);
         normalizedCoord -= 0.5;
         normalizedCoord *= 1.2;
